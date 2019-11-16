@@ -7,10 +7,12 @@ import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Test
 
 
-class AppTest {
+class GameTest {
     @Test
     fun testAppHasAGreeting() {
-        val classUnderTest = App()
+        val classUnderTest = Game(listOf(
+                Cell(0,0, true)
+        ))
         assertNotNull(classUnderTest.greeting, "app should have a greeting")
     }
 }

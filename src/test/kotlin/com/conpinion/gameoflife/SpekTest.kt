@@ -5,7 +5,8 @@ import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.gherkin.Feature
 
 internal object SpekTest : Spek({
-    Feature("Testing spek") {
+    Feature("Game of Life") {
+
         Scenario("first test") {
             When("condition") {
 
