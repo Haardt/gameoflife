@@ -17,13 +17,16 @@ plugins {
 }
 
 repositories {
-    // Use jcenter for resolving dependencies.
-    // You can declare any Maven/Ivy/file repository here.
     mavenCentral()
     jcenter()
+    maven(url = "https://jitpack.io")
 }
 
 dependencies {
+
+    implementation("org.hexworks.zircon:zircon.core-jvm:2018.12.25-XMAS")
+    implementation("org.hexworks.zircon:zircon.jvm.swing:2018.12.25-XMAS")
+
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.slf4j:slf4j-simple:1.7.26")
