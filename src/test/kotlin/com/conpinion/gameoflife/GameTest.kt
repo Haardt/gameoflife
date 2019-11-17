@@ -17,7 +17,7 @@ internal class GameTest : Spek({
             var result = false
 
             When("#hasNeighbors called with direct neighbor") {
-                result = game.areNeighbors(Cell(5, 5), Cell(4, 5))
+                result = game.areThereNeighbors(Cell(5, 5), Cell(4, 5))
             }
             Then("it should return true") {
                 result `should be equal to` true
@@ -25,7 +25,7 @@ internal class GameTest : Spek({
 
 
             When("#hasNeighbors called without neighbors") {
-                result = game.areNeighbors(Cell(5, 5), Cell(7, 7))
+                result = game.areThereNeighbors(Cell(5, 5), Cell(7, 7))
             }
             Then("it should return true") {
                 result `should be equal to` false

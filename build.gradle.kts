@@ -44,7 +44,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClassName = "com.conpinion.gameoflife.AppKt"
+    mainClassName = "com.conpinion.gameoflife.GameUiKt"
 }
 
 tasks {

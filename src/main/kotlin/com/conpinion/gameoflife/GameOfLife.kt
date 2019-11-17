@@ -1,5 +1,4 @@
 import arrow.syntax.function.partially1
-import arrow.syntax.function.pipe
 
 data class Cell(val x: Int, val y: Int)
 
@@ -46,9 +45,9 @@ class GameOfLife {
     }.flatten()
 
     internal fun numberOfNeighbors(cells: List<Cell>, searchCell: Cell) =
-            cells.filter(::areNeighbors.partially1(searchCell)).count()
+            cells.filter(::areThereNeighbors.partially1(searchCell)).count()
 
-    internal fun areNeighbors(searchCell: Cell, currentCell: Cell): Boolean =
+    internal fun areThereNeighbors(searchCell: Cell, currentCell: Cell): Boolean =
             if (searchCell == currentCell) {
                 false
             } else {

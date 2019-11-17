@@ -62,5 +62,5 @@ fun main() {
             world pipe ::step pipe ::printCells.partially2(game::updateCells)
         }
     }
-    println("Ende")
+    System.exit(0)
 }
